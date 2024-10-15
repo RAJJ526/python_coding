@@ -1,0 +1,435 @@
+# # # #reverse the elements in a string of a list
+# # # a=["raj","hari", "megha"]
+# # # c=[]
+# # # for i in range(len(a)):
+# # #     x=a[i]
+# # #     b=x[::-1]
+# # #     c.append(b)
+# # # print(c)
+
+# # # #sorting of a list
+# # # a=[7,6,5,4,3,2,4,5,6,7]
+# # # for i in range(len(a)):
+# # #     for j in range(len(a)):
+# # #         if a[i]<a[j]:
+# # #             c=a[i]
+# # #             a[i]=a[j]
+# # #             a[j]=c
+# # # print(a)
+
+# # # #length of a list
+# # # a=[1,2,3,4,5,6,7]
+# # # b=len(a)
+# # # print(b)
+
+# # # #program to check whether the element exist or not
+# # # a=5
+# # # b=[2,3,4,5,6]
+# # # if a in b:
+# # #     print("exist")
+# # # else:
+# # #     print("not exist")
+
+# # # #clear the list with the help of slicing
+# # # a=[2,3,4,5,6]
+# # # b=a[:0]
+# # # print(b)
+
+# # # # #program to find sum and average in a list of python
+# # # a=[12,34,34,45]
+# # # b=0
+# # # for i in a:
+# # #     b=b+i
+# # #     average=b/4
+# # # print(average)
+# # # print(b)
+
+# # # #program to count even and odd numbers in a list of python
+# # # a=[1,2,3,4,5,6,7,8,9]
+# # # counta=0
+# # # countb=0
+# # # for i in a:
+# # #     if i%2==0:
+# # #         counta+=1
+# # #     else:
+# # #         countb+=1
+# # # print(counta)
+# # # print(countb)
+
+# # # #program to print sum of elements of a string in a list
+# # # a=["12","23","45","56","67"]
+# # # d=[]
+# # # for i in range(len(a)):
+# # #     x=str(a[i])
+# # #     c=0
+# # #     for j in x:
+# # #         c=c+int(j)
+# # #     d.append(c)
+# # # print(d)
+
+# # # #program to sort list in a list
+# # # a=[[5,4,3,2,1],[6,5,4,3,2],[6,5,4,3,6,7,4]]
+# # # for i in range(len(a)):
+# # #     x=a[i]
+# # #     for j in range(len(x)):
+# # #         y=x[j]
+# # #         for k in range(len(x)):
+# # #             z=x[k]
+# # #             if x[j]<x[k]:
+# # #                 c=x[j]
+# # #                 x[j]=x[k]
+# # #                 x[k]=c
+# # # print(a)
+
+# # # #program to remove list from a list
+# # # a=[1,2,3,[3,4,5,6,7],6,7,8]
+# # # for i in a:
+# # #     if isinstance(i,list):
+# # #         a.remove(i)
+# # # print(a)
+
+# # # #get values in a list of dictionaries
+# # # a={
+# # #     "1":
+# # #         "Name: Raj Kumar" "\n"
+# # #         "Class:12" "\n"
+# # #         "Roll No.: 1" "\n"
+# # #     ,
+# # #     "2":
+# # #         "Name:Ayush" "\n"
+# # #         "Class:12"  "\n"
+# # #         "Roll No. : 2" "\n",
+# # #     "3":
+# # #         "Name:neha" "\n"
+# # #         "Class:12"  "\n"
+# # #         "Roll No. : 2" "\n",
+# # #     "4":
+# # #         "Name:akash" "\n"
+# # #         "Class:12"  "\n"
+# # #         "Roll No. : 2" "\n",
+    
+# # # } 
+
+# # # b=a.items()
+# # # print(b)
+# # # c=a.keys()
+# # # print(c)
+# # # d=a.values()
+# # # print(d)
+
+ 
+# # # #program to items details using nested dictionary
+# # # a={
+# # #     "apple":20,
+# # #     "orange":30,
+# # #     "mango":40,
+# # # }
+# # # b=list(a.values())
+# # # c=list(a.keys())
+# # # user_input=input("enter your number:")
+# # # if user_input.isnumeric():
+# # #     user_input=int(user_input)
+# # # if user_input in a:
+# # #     print(a.get(user_input))
+# # # elif user_input in b:
+# # #     indx=b.index(user_input)
+# # #     print(c[indx])
+
+# # # a={
+# # #     "apple":20,
+# # #     "orange":30,
+# # #     "mango":40,
+# # # }
+# # # b=list(a.values())
+# # # c=list(a.keys())
+# # # total=0
+# # # while True:
+# # #     user_input=input("enter the item name")
+# # #     if user_input=="q":
+# # #         break
+# # #     if user_input in a:
+# # #         z=a.get(user_input)
+# # #         print(a.get(user_input))
+# # #         total=total+z
+# # # print(f"your total price is {total} ")
+
+# # #program to print duplicate values in a dictionary
+# # # a={
+# # #     "apple":20,
+# # #     "mango":30,
+# # #     "grapes":40,
+# # #     "orange":50,
+# # #     "banana":20,
+# # #     "cherry":30,
+# # # }
+
+# # # b=list(a.values())
+# # # c=[]
+# # # d=0
+# # # for i in b:
+# # #     if i not in c:
+# # #         c.append(i)
+# # #     else:
+# # #         d=d+i
+# # #         print(i)
+
+# # # accurate program to print count of duplicate elements in a dictionary 
+# # a={
+# #     'ramesh':'30',
+# #     'anita':'40',
+# #     'mohit':'60',
+# #     'ankita':'90',
+# #     'mukesh':'60',
+# #     'aryan':'40',
+# #     'suresh':'40',
+   
+# # }
+# # d=list(a.values())
+# # l={}
+# # for i in range(len(d)):
+# #     n=d[i]
+# #     m=d.count(d[i])
+# #     if m>1:
+# #         l.setdefault(d[i],m)
+# # print(l)
+
+
+# # #frequency of elements in a list
+# # list=[1,22,33,44,5,5,6,7,8]
+# # e={}
+# # for i in list:
+# #     if i not in e:
+# #         e[i]=1
+# #     else:
+# #         e[i]=e[i]+1
+# # print(e)
+
+# # #print duplicates in a list
+# # list=[1,2,2,2,3,3,4,4,5,6,7,8]
+# # c=[]
+# # d=[]
+# # for i in list:
+# #     if i not in c:
+# #         c.append(i)
+# #     elif i not in d:
+# #         d.append(i)
+# # print(d)
+
+
+# # #remove duplicates elements from a list
+# # list=[1,2,2,2,3,3,4,4,5,6,7,8]
+# # c=[]
+# # d=[]
+# # for i in list:
+# #     m=list.count(i)
+# #     if m>1:
+# #         list.remove(i)
+# # print(list)
+
+# # #insert list in a tuple
+# # a=(12,34,56,67)
+# # c=[3,4,5,6]
+# # b=list(a)
+# # b.insert(3,c)
+# # e=tuple(b)
+# # print(e)
+
+# # #python program to check if the number is prime or not
+# # a=1
+# # x=False
+# # for i in range(2,a):
+# #     if a%i==0:
+# #         x=True
+# # if x or a==1:
+# #     print("a is not prime")
+# # else:
+# #     print("a is prime")
+
+# #program to find the common elements between two list
+# # a=[1,2,3,4,5,6]
+# # b=[4,57,8,9,6]
+# # c=[]
+# # for i in a:
+# #     if i in b:
+# #         c.append(i)
+# # print(c)
+
+# # sort the elements using bubble sort
+# a=[7,6,5,4,5,6,7,9,0,2,3]
+# c=len(a)
+# for i in range(c-1):
+#     for j in range(c-i-1):
+#         if a[j]>a[j+1]:
+#             a[j],a[j+1]=a[j+1],a[j]
+# print(a)
+
+# #program to change capital letters to small or vice versa
+# # a="this is raj"
+# # b="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+# # c="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+# # d=""
+# # for i in range(len(a)):
+# #     for j in range(len(b)):
+# #         if a[i]==b[j]:
+# #             d=d+c[j]
+# # print(d)
+
+#program to print middle element in the list
+# numList = [1, 2, 3,7,4,9]
+# midElement = int((len(numList)/2)) 
+# print(numList[midElement])
+
+# #remove set list tuple from the list
+# a=[[1,2,3,4],{4,5,6,7},4,(1,2,3,4),5,6,7]
+# b=0
+# while True:
+#     x=True
+#     for i in a:
+#         if isinstance(i,list):
+#             x=False
+#         elif isinstance(i,set):
+#             x=False
+#         elif isinstance(i,tuple):
+#             x=False
+#     if x:
+#         break
+
+#     if isinstance(a[b],list):
+#         a.remove(a[b])
+#         continue
+#     elif isinstance(a[b],set):
+#         a.remove(a[b])
+#         continue
+#     elif isinstance(a[b],tuple):
+#         a.remove(a[b])
+#         continue
+#     b=b+1
+# print(a)
+
+#remove multiple lists from a list
+# def element(sol):
+#     b=[]
+#     for i in sol:
+#         if isinstance(i,list):
+#             b.extend(element(i))
+#         else:
+#             b.append(i)
+#     return b
+
+# sol=[1,2,3,[4,5,6,7,[4,5,6,7,8,[7,8,9,9,9]]]]
+# y=element(sol)
+# print(y)
+
+ #program to print dictionary with keys and values show number is prime or not
+# c={}
+# for i in range(1,500):
+#     x=False
+#     for j in range(2,i):
+#         if i%j==0:
+#             x=True
+#     if x or i==1:
+#         c[i]="not prime"
+#     else:
+#         c[i]="prime"
+# print(c)   
+
+#add the elements in a depth list
+# def element(sol):
+#     b=0
+#     for i in sol:
+#         if isinstance(i,list):
+#             b=b+element(i)
+#         else:
+#             b=b+i
+#     return b
+
+# sol=[1,2,3,[4,5,6,7,[4,5,6,7,8,[7,8,9,9,9],8,9]]]
+# y=element(sol)
+# print(y)
+
+ #fibonacci series upto nterms
+# c = int(input("How many terms? "))
+# a, b = 0, 1
+# if c <= 0:
+#    print("Please enter a positive integer")
+# elif c == 1:
+#    print("Fibonacci sequence upto",c,":")
+#    print(a)
+# else:
+#    print("Fibonacci sequence:")
+#    count = 0
+#    while count < c:
+#        print(a)
+#        final = a + b
+#        a = b
+#        b = final
+#        count += 1
+
+#find the greatest common factor
+# a=60
+# l=[]
+# for i in range(1,60):
+#     if a%i==0:
+#         l.append(i)
+# b=40
+# k=[]
+# for i in range(1,48):
+#     if b%i==0:
+#         k.append(i)
+# x=set(l)
+# y=set(k)
+# z=x.intersection(y)
+# f=list(z)
+# print(max(f))
+
+
+
+
+
+    
+
+
+
+
+        
+
+
+
+
+
+  
+
+
+
+
+
+
+ 
+
+
+
+    
+
+
+    
+
+        
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
